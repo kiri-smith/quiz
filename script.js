@@ -113,6 +113,14 @@ function displayQuestion(){
     questionAnswerDEl.textContent = "d. " + currentQuestion.d;
 }
 
+function submitAnswer(answer){
+    var correctAnswer = questions[currentQuestionIndex].correctAnswer;
+    if (answer!==correctAnswer){
+        //TODO: Subtract time from clock
+    }
+    currentQuestionIndex++;
+    displayQuestion();
+}
 //then timer begins countdown and question-one appears
 
 //user answers question
