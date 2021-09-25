@@ -1,4 +1,45 @@
+*
+{background-color: blueviolet;
+}
 .hidden{
     display: none;
 }
 
+.quiz-title{
+    text-align: center;
+    font-family: fantasy;
+}
+
+.start-container{
+    display: flex;
+    justify-content: center;
+}
+
+.start-button{
+    background-color: white;
+    font-family: monospace;
+}
+
+button:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.question-container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.question{
+    color: white;
+}
+
+.countdown-timer{
+    color: yellow;
+    margin: 40px;
+}
+
+h3{
+    color: white;
+}
