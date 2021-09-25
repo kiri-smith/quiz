@@ -1,5 +1,7 @@
+//when user pushes the start button, the quiz will begin (want timer to begin countdown and question 1 to appear)
 var startButton = document.querySelector(".start-button");
 
+//questions to appear one-at-a-time during quiz
 var questions = [
     {
         question: "What liquor is used in a traditional margarita? (Click the text of your answer choice.)",
@@ -84,6 +86,7 @@ var questions = [
 ]
 
 //push start button
+//store all variables needed
 
 startButton.addEventListener("click", startQuiz);
 var questionContainer = document.querySelector(".question-container");
@@ -101,16 +104,18 @@ var timer = 0;
 var timerTicker;
 var highScores = JSON.parse(localStorage.getItem("high-scores")) || [];
 
+//when button is pushed, quiz starts -- start button becomes hidden, question appears and countdown appears
 function startQuiz(){
     startContainer.classList.add("hidden");
     questionContainer.classList.remove("hidden");
     countdownContainer.classList.remove("hidden");
     displayQuestion();
-    timer = 120;
+    timer = 120; //chose a 2 minute quiz
     countdownTimerEl.textContent = timer;
-    timerTicker = setInterval(tickTimer, 1000);
+    timerTicker = setInterval(tickTimer, 1000); //timer counts down by seconds
 }
 
+//when quiz ends, the questions are hidden, the timer is hidden, and the high scores appear
 function endQuiz(){
     questionContainer.classList.add("hidden");
     countdownContainer.classList.add("hidden");
@@ -121,15 +126,18 @@ function endQuiz(){
         initials: initials,
         score: timer,
     })
+    //we want to save the high scores in local storage
     highScores.sort(compareHighScores);
     localStorage.setItem("high-scores", JSON.stringify(highScores));
     displayHighScores();
 }
 
+//we want to sort the high scores by rank and display
 function compareHighScores(a, b){
     return b.score - a.score;
 }
 
+//when time runs out, end quiz
 function tickTimer(){
     if (timer <= 0){
         countdownTimerEl.textContent = timer;
@@ -139,6 +147,7 @@ function tickTimer(){
     countdownTimerEl.textContent = timer;
 }
 
+//display each question one at a time with the answer choices
 function displayQuestion(){
     var currentQuestion = questions[currentQuestionIndex];
     questionTextEl.textContent = currentQuestion.question;
@@ -148,6 +157,7 @@ function displayQuestion(){
     questionAnswerDEl.textContent = "d. " + currentQuestion.d;
 }
 
+//we want to display the high scores with the stored initials and times
 function displayHighScores(){
     while (highScoresContainer.firstChild){
         highScoresContainer.removeChild(highScoresContainer.firstChild);
@@ -164,11 +174,13 @@ function displayHighScores(){
     }
 }
 
+//we want to check each answer submitted with the stored correct answer and subtract 10 seconds from the time if the question was incorrect
 function submitAnswer(answer){
     var correctAnswer = questions[currentQuestionIndex].correctAnswer;
     if (answer!==correctAnswer){
         timer-=10; 
     }
+    //if the time runs out before the end of the quiz, end the quiz
     currentQuestionIndex++;
     if (currentQuestionIndex >= questions.length){
         endQuiz();
@@ -176,14 +188,3 @@ function submitAnswer(answer){
         displayQuestion();
     }
 }
-
-//then timer begins countdown and question-one appears
-
-//user answers question
-    //if correct: move to question-two
-    //else move to question-two and subtract time from clock
-
-//at end of quiz or when timer hits 0, end quiz
-    //prompt for initials 
-    //store initials and score
-    //display on scoreboard ".high-scores"
