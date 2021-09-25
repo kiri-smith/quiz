@@ -10,16 +10,16 @@ var questions = [
         correctAnswer: "c"
     },
     {
-        question: "question 2?",
-        a: "vodka",
-        b: "rum",
-        c: "tequila",
-        d: "whiskey",
-        correctAnswer: "a"
+        question: "Which two liquors are commonly used to make a martini?",
+        a: "rum and vodka",
+        b: "gin and rum",
+        c: "vodka and rum",
+        d: "gin and vodka ",
+        correctAnswer: "d"
     },
     {
-        question: "question 3?",
-        a: "vodka",
+        question: "Which set of ingredients could be used to make an Old Fashioned?",
+        a: "whiskey",
         b: "rum",
         c: "tequila",
         d: "whiskey",
@@ -176,6 +176,7 @@ function submitAnswer(answer){
         displayQuestion();
     }
 }
+
 //then timer begins countdown and question-one appears
 
 //user answers question
