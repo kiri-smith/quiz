@@ -2,7 +2,7 @@ var startButton = document.querySelector(".start-button");
 
 var questions = [
     {
-        question: "What liquor is used in a traditional margarita?",
+        question: "What liquor is used in a traditional margarita? (Click the text of your answer choice.)",
         a: "vodka",
         b: "rum",
         c: "tequila",
@@ -10,7 +10,7 @@ var questions = [
         correctAnswer: "c"
     },
     {
-        question: "Which two liquors are commonly used to make a martini?",
+        question: "Which two liquors are commonly used to make a martini? (Click the text of your answer choice.)",
         a: "rum and vodka",
         b: "gin and rum",
         c: "vodka and rum",
@@ -18,68 +18,68 @@ var questions = [
         correctAnswer: "d"
     },
     {
-        question: "Which set of ingredients could be used to make an Old Fashioned?",
-        a: "whiskey",
-        b: "rum",
-        c: "tequila",
-        d: "whiskey",
+        question: "Which set of ingredients could be used to make an Old Fashioned? (Click the text of your answer choice.)",
+        a: "whiskey, sugar, bitters, and water",
+        b: "dark rum, bitters, and bourbon",
+        c: "whiskey, simple syrup, and lemon juice",
+        d: "dark rum, simple syrup, and orange zest",
         correctAnswer: "a"
     },
     {
-        question: "question 4?",
+        question: "Which of the following is NOT included in a Long Island Iced Tea? (Click the text of your answer choice.)",
         a: "vodka",
-        b: "rum",
+        b: "triple sec",
         c: "tequila",
         d: "whiskey",
+        correctAnswer: "d"
+    },
+    {
+        question: "What ingredient turns a bar drink/shot into a 'bomb'? (Click the text of your answer choice.)",
+        a: "Guinness",
+        b: "sour mix",
+        c: "Red Bull",
+        d: "Grand Marnier",
+        correctAnswer: "c"
+    },
+    {
+        question: "What liquor is used in a traditional Moscow Mule? (Click the text of your answer choice.)",
+        a: "gin",
+        b: "rum",
+        c: "tequila",
+        d: "vodka",
+        correctAnswer: "d"
+    },
+    {
+        question: "Which set of ingredients could make a Dark and Stormy? (Click the text of your answer choice.)",
+        a: "vodka, whiskey, bitters, and lemon juice",
+        b: "dark rum, ginger beer, and lime juice",
+        c: "jagermeister and Guinness",
+        d: "vodka and coffee liqueur",
+        correctAnswer: "b"
+    },
+    {
+        question: "What is the key difference between the drinks: White Russian and Black Russian? (Click the text of your answer choice.)",
+        a: "coffee",
+        b: "cream",
+        c: "vodka",
+        d: "chocolate",
+        correctAnswer: "b"
+    },
+    {
+        question: "Which ingredient controls if a Martini is 'dry' or 'wet'? (Click the text of your answer choice.)",
+        a: "vermouth",
+        b: "olive juice",
+        c: "gin",
+        d: "lemon",
         correctAnswer: "a"
     },
     {
-        question: "What liquor is used in a traditional margarita?",
-        a: "vodka",
-        b: "rum",
-        c: "tequila",
-        d: "whiskey",
-        correctAnswer: "a"
-    },
-    {
-        question: "What liquor is used in a traditional margarita?",
-        a: "vodka",
-        b: "rum",
-        c: "tequila",
-        d: "whiskey",
-        correctAnswer: "a"
-    },
-    {
-        question: "What liquor is used in a traditional margarita?",
-        a: "vodka",
-        b: "rum",
-        c: "tequila",
-        d: "whiskey",
-        correctAnswer: "a"
-    },
-    {
-        question: "What liquor is used in a traditional margarita?",
-        a: "vodka",
-        b: "rum",
-        c: "tequila",
-        d: "whiskey",
-        correctAnswer: "a"
-    },
-    {
-        question: "What liquor is used in a traditional margarita?",
-        a: "vodka",
-        b: "rum",
-        c: "tequila",
-        d: "whiskey",
-        correctAnswer: "a"
-    },
-    {
-        question: "question 10?",
-        a: "vodka",
-        b: "rum",
-        c: "tequila",
-        d: "whiskey",
-        correctAnswer: "a"
+        question: "What juices do you include in a traditional Cosmopolitan? (Click the text of your answer choice.)",
+        a: "cranberry only",
+        b: "cranberry and lemon",
+        c: "cranberry, lemon, and grenadine",
+        d: "cranberry, lemon, grenadine, and pomegranite",
+        correctAnswer: "b"
     },
 ]
 
@@ -106,7 +106,7 @@ function startQuiz(){
     questionContainer.classList.remove("hidden");
     countdownContainer.classList.remove("hidden");
     displayQuestion();
-    timer = 180;
+    timer = 120;
     countdownTimerEl.textContent = timer;
     timerTicker = setInterval(tickTimer, 1000);
 }
