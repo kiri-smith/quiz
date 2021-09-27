@@ -4,7 +4,7 @@ For this project, I created a Bartending Quiz with a countdown timer.  The quiz 
 
 ## Snapshot
 
-<img src="PGsnap.JPG" alt="Screenshot of Bartending Quiz">
+<img src="SnipQuiz.JPG" alt="Screenshot of Bartending Quiz">
 
 ## Built With
 
@@ -17,7 +17,7 @@ For this project, I created a Bartending Quiz with a countdown timer.  The quiz 
 
 ## Deployed Link
 
-* [https://kiri-smith.github.io/password-generator/](#)
+* [https://kiri-smith.github.io/quiz/](#)
 
 ## Author
 
@@ -35,4 +35,3 @@ This project is licensed under the MIT License.
 
 * Jerome Chenette - for imparting tips, tricks, and wisdom of coding with my cohort
 * My peers - for answering questions, pushing me to excel and supporting this journey
-* Armenuhi Avanesyan - for her support through our tutoring sessions
