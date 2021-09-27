@@ -1,5 +1,5 @@
 *
-{background-color: blueviolet;
+{background-color: black;
 }
 .hidden{
     display: none;
@@ -8,6 +8,7 @@
 .quiz-title{
     text-align: center;
     font-family: fantasy;
+    color: hotpink;
 }
 
 .start-container{
@@ -33,13 +34,53 @@ button:hover{
 
 .question{
     color: white;
+    padding: 0px, 20px, 0px, 20px;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.question-answer-a{
+    color: turquoise;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.question-answer-b{
+    color: plum;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.question-answer-c{
+    color: mediumslateblue;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.question-answer-d{
+    color: greenyellow;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .countdown-timer{
     color: yellow;
+    font-size: 28px;
     margin: 40px;
 }
 
 h3{
     color: white;
+}
+
+.high-scores-container{
+    color: hotpink;
 }
