@@ -7,7 +7,7 @@
 
 .quiz-title{
     text-align: center;
-    font-family: fantasy;
+    font-family:cursive;
     color: hotpink;
 }
 
@@ -91,8 +91,4 @@ h3{
 
 .high-scores-container{
     color: hotpink;
-}
-
-.question-container{
-    background-color: white !important;
 }
