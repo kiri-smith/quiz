@@ -10,48 +10,48 @@
 </head>
 
 <body>
-    <div style="background-image: url('img_girl.jpg');">
-        <header>
-            <h1 class="quiz-title">Bartending Quiz<h1>
-                    <h2>Click "start" to begin. Answer each question quickly but BE CAREFUL: answering incorrectly will
-                        subtract 10 seconds from the clock.</h2>
-        </header>
 
-        <main>
+    <header>
+        <h1 class="quiz-title">Bartending Quiz<h1>
+                <h2>Click "start" to begin. Answer each question quickly but BE CAREFUL: answering incorrectly will
+                    subtract 10 seconds from the clock.</h2>
+    </header>
 
-            <section class="start-container">
-                <button class="start-button">Start</button>
-            </section>
+    <main>
 
-            <section>
-                <h3>Time Left to Answer (in seconds)</h3>
-                <div class="hidden countdown-timer-container"></div>
-                <div class="countdown-timer"></div>
-            </section>
+        <section class="start-container">
+            <button class="start-button">Start</button>
+        </section>
 
-            <section class="hidden question-container">
+        <section>
+            <h3>Time Left to Answer (in seconds)</h3>
+            <div class="hidden countdown-timer-container"></div>
+            <div class="countdown-timer"></div>
+        </section>
 
-                <div class="question">
-                    <div class="question-text"></div>
-                    <div class="question-answer-a" onclick="submitAnswer('a')"></div>
-                    <div class="question-answer-b" onclick="submitAnswer('b')"></div>
-                    <div class="question-answer-c" onclick="submitAnswer('c')"></div>
-                    <div class="question-answer-d" onclick="submitAnswer('d')"></div>
-                </div>
+        <section class="hidden question-container">
 
-            </section>
+            <div class="question">
+                <div class="question-text"></div>
+                <div class="question-answer-a" onclick="submitAnswer('a')"></div>
+                <div class="question-answer-b" onclick="submitAnswer('b')"></div>
+                <div class="question-answer-c" onclick="submitAnswer('c')"></div>
+                <div class="question-answer-d" onclick="submitAnswer('d')"></div>
+            </div>
+
+        </section>
 
 
 
-            <section>
-                <h3>High Scores (time shown: seconds left on the clock)</h3>
-                <aside class="hidden high-scores-container"> </aside>
-            </section>
+        <section>
+            <h3>High Scores (time shown: seconds left on the clock)</h3>
+            <aside class="hidden high-scores-container"> </aside>
+        </section>
 
-        </main>
+    </main>
     </div>
     <script src="script.js"></script>
 
-</body>
+
 
 </html>
