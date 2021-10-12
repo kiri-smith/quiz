@@ -92,3 +92,7 @@ h3{
 .high-scores-container{
     color: hotpink;
 }
+
+.question-container{
+    background-color: white !important;
+}
