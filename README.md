@@ -4,7 +4,11 @@ For this project, I created a Bartending Quiz with a countdown timer.  The quiz 
 
 ## Snapshot
 
+Click start and the first question appears:
 <img src="SnipQuiz.JPG" alt="Screenshot of Bartending Quiz">
+
+Time ticks down.  The quiz ends when the timer hits 0.  Incorrect answers subtract an extra 10 seconds from the timer.
+<img src="Snip2Quiz.JPG" alt="Screenshot of sample question">
 
 ## Built With
 
